@@ -27,3 +27,7 @@ let get_extension filename =
 let lookup filename =
   let ext = get_extension filename in
   Mime_types.map_extension (String.lowercase ext)
+
+(* Detect MIME type from file contents *)
+let detect content =
+  Mime_detect.detect content

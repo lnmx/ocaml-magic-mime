@@ -20,7 +20,7 @@ PostConfCommand: sh ./generate.sh
 Library "magic-mime"
   Path:          .
   Findlibname:   magic-mime
-  Modules:       Magic_mime, Mime_types
+  Modules:       Magic_mime, Mime_types, Mime_detect
 
 SourceRepository master
   Type:     git
