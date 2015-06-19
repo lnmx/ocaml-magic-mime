@@ -17,6 +17,13 @@ Plugins:     META (0.4), DevFiles (0.4)
 BuildTools:  ocamlbuild
 PostConfCommand: sh ./generate.sh
 
+Executable "magic-mime-factory"
+  Path:           factory/
+  MainIs:         main.ml
+  BuildTools:     ocamlbuild
+  CompiledObject: best
+  BuildDepends:   xmlm
+
 Library "magic-mime"
   Path:          .
   Findlibname:   magic-mime

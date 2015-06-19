@@ -17,5 +17,5 @@
 (** Database of file extensions to MIME types from RFC2045 onwards. *)
 
 (** [map_extension e] converts the file extension [e] into a MIME type,
-    defaulting to [application/octet-stream] if it is unknown. *)
-val map_extension : string -> string
+    returning None if it is unknown. *)
+val map_extension : string -> string option

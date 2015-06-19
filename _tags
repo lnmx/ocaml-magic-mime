@@ -1,5 +1,5 @@
 # OASIS_START
-# DO NOT EDIT (digest: f54d40ab1aa95a7a3b2aac75317eb0b1)
+# DO NOT EDIT (digest: b9696b5e32d182d34bf6346f7022e022)
 # Ignore VCS directories, you can use the same kind of rule outside
 # OASIS_START/STOP if you want to exclude directories that contains
 # useless stuff for the build process
@@ -14,6 +14,9 @@ true: annot, bin_annot
 ".git": not_hygienic
 "_darcs": -traverse
 "_darcs": not_hygienic
+# Executable magic-mime-factory
+<factory/main.{native,byte}>: pkg_xmlm
+<factory/*.ml{,i,y}>: pkg_xmlm
 # Library magic-mime
 "magic-mime.cmxs": use_magic-mime
 # OASIS_STOP
